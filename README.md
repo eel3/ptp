@@ -27,13 +27,13 @@ All you have to do is compile ptp.c. Use make and Makefile.
 Usage
 -----
 
-See \`Example'. midiport has no option.
+See \`Example'. ptp has no option.
 
 Example
 -------
 
-    > rem Example on Windows 7
-    
+Example on Windows 7:
+
     > ptp
     THREAD_PRIORITY_IDLE	-15
     THREAD_PRIORITY_LOWEST	-2
@@ -42,10 +42,9 @@ Example
     THREAD_PRIORITY_ABOVE_NORMAL	1
     THREAD_PRIORITY_HIGHEST	2
     THREAD_PRIORITY_TIME_CRITICAL	15
-    
-    > _
 
-    $ # Example on Linux
+Example on Linux:
+
     $ ptp
     SCHED_FIFO	1	99
     SCHED_OTHER	0	0
