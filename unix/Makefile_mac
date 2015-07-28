@@ -1,12 +1,13 @@
 # @brief   ptp Makefile for Mac OS X.
 # @author  eel3
-# @date    2014/11/01
+# @date    2015/07/28
 #
 # @note
-# - LLVM 4.2 (clang-425.0.28, Xcode 4.6.3) on Mac OS X 10.9.4
+# - Apple LLVM 6.0 (clang-600.0.57, Xcode 6.2) on Mac OS X 10.9.5
 
 CC             := xcrun cc
-CPPFLAGS       := -isysroot "$(shell xcodebuild -version -sdk macosx10.8 | sed -n '/^Path: /s///p')"
-TARGET_ARCH    := -mmacosx-version-min=10.6 -arch i386 -arch x86_64
+SDKROOT        := $(shell xcodebuild -version -sdk macosx | sed -n '/^Path: /s///p')
+CPPFLAGS        = -isysroot "$(SDKROOT)"
+TARGET_ARCH    := -mmacosx-version-min=10.8 -arch i386 -arch x86_64
 
 include ./Makefile
