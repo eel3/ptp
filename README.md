@@ -16,7 +16,8 @@ Windows, Linux, Mac OS X.
 Set up
 ------
 
-All you have to do is compile ptp.c. Use make and Makefile.
+1. Compile ptp.c. Use make and Makefile.
+2. Put ptp in a directory registered in PATH.
 
 | toolset              | Makefile           |
 |:---------------------|:-------------------|
@@ -27,7 +28,7 @@ All you have to do is compile ptp.c. Use make and Makefile.
 Usage
 -----
 
-See \`Example'. ptp has no option.
+Simply execute `ptp`. ptp has no option.
 
 Example
 -------
